@@ -1,3 +1,278 @@
-div {
-    border: 2px solid black;
+@font-face {
+    font-family: 'LibreBaskerville-Bold';
+    src: url('./fonts/LibreBaskerville-Bold.eot');
+    src: url('./fonts/LibreBaskerville-Bold.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/LibreBaskerville-Bold.svg') format('svg'),
+         url('./styles/fonts/LibreBaskerville-Bold.ttf') format('truetype'),
+         url('./styles/fonts/LibreBaskerville-Bold.woff') format('woff'),
+         url('./styles/fonts/LibreBaskerville-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LibreBaskerville-Italic';
+    src: url('./styles/fonts/LibreBaskerville-Italic.eot');
+    src: url('./styles/fonts/LibreBaskerville-Italic.eot?#iefix') format('embedded-opentype'),
+         url('./styles/fonts/LibreBaskerville-Italic.svg') format('svg'),
+         url('./styles/fonts/LibreBaskerville-Italic.ttf') format('truetype'),
+         url('./styles/fonts/LibreBaskerville-Italic.woff') format('woff'),
+         url('./styles/fonts/LibreBaskerville-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LibreBaskerville-Regular';
+    src: url('./styles/fonts/LibreBaskerville-Regular.eot');
+    src: url('./styles/fonts/LibreBaskerville-Regular.eot?#iefix') format('embedded-opentype'),
+         url('./styles/fonts/LibreBaskerville-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather-Black';
+    src: url('./styles/fonts/Merriweather-Black.eot');
+    src: url('./styles/fonts/Merriweather-Black.eot?#iefix') format('embedded-opentype'),
+         url('./styles/fonts/Merriweather-Black.svg#Merriweather-Black') format('svg'),
+         url('./styles/fonts/Merriweather-Black.ttf') format('truetype'),
+         url('./styles/fonts/Merriweather-Black.woff') format('woff'),
+         url('./styles/fonts/Merriweather-Black.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather-Italic';
+    src: url('./styles/fonts/Merriweather-Italic.eot');
+    src: url('./styles/fonts/Merriweather-Italic.eot?#iefix') format('embedded-opentype'),
+         url('./styles/fonts/Merriweather-Italic.svg#Merriweather-Italic') format('svg'),
+         url('./styles/fonts/Merriweather-Italic.ttf') format('truetype'),
+         url('./styles/fonts/Merriweather-Italic.woff') format('woff'),
+         url('./styles/fonts/Merriweather-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+
+@font-face {
+    font-family: 'Merriweather-Regular';
+    src: url('./styles/fonts/Merriweather-Regular.eot');
+    src: url('./styles/fonts/Merriweather-Regular.eot?#iefix') format('embedded-opentype'),
+         url('./styles/fonts/Merriweather-Regular.svg#Merriweather-Regular') format('svg'),
+         url('./styles/fonts/Merriweather-Regular.ttf') format('truetype'),
+         url('./styles/fonts/Merriweather-Regular.woff') format('woff'),
+         url('./styles/fonts/Merriweather-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+
+@font-face {
+    font-family: 'Oswald-Bold';
+    src: url('./styles/fonts/Oswald-Bold.eot');
+    src: url('./styles/fonts/Oswald-Bold.eot?#iefix') format('embedded-opentype'),
+         url('./styles/fonts/Oswald-Bold.svg#Oswald-Bold') format('svg'),
+         url('./styles/fonts/Oswald-Bold.ttf') format('truetype'),
+         url('./styles/fonts/Oswald-Bold.woff') format('woff'),
+         url('./styles/fonts/Oswald-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald-Light';
+    src: url('./styles/fonts/Oswald-Light.eot');
+    src: url('./styles/fonts/Oswald-Light.eot?#iefix') format('embedded-opentype'),
+         url('./styles/fonts/Oswald-Light.svg#Oswald-Light') format('svg'),
+         url('./styles/fonts/Oswald-Light.ttf') format('truetype'),
+         url('./styles/fonts/Oswald-Light.woff') format('woff'),
+         url('./styles/fonts/Oswald-Light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald-Regular';
+    src: url('./styles/fonts/Oswald-Regular.eot');
+    src: url('./styles/fonts/Oswald-Regular.eot?#iefix') format('embedded-opentype'),
+         url('./styles/fonts/Oswald-Regular.svg#Oswald-Regular') format('svg'),
+         url('./styles/fonts/Oswald-Regular.ttf') format('truetype'),
+         url('./styles/fonts/Oswald-Regular.woff') format('woff'),
+         url('./styles/fonts/Oswald-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('./styles/fonts/Roboto-Bold.eot');
+    src: url('./styles/fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+         url('./styles/fonts/Roboto-Bold.svg#Roboto-Bold') format('svg'),
+         url('./styles/fonts/Roboto-Bold.ttf') format('truetype'),
+         url('./styles/fonts/Roboto-Bold.woff') format('woff'),
+         url('./styles/fonts/Roboto-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+
+@font-face {
+    font-family: 'Roboto-Italic';
+    src: url('./styles/fonts/Roboto-Italic.eot');
+    src: url('./styles/fonts/Roboto-Italic.eot?#iefix') format('embedded-opentype'),
+         url('./styles/fonts/Roboto-Italic.svg#Roboto-Italic') format('svg'),
+         url('./styles/fonts/Roboto-Italic.ttf') format('truetype'),
+         url('./styles/fonts/Roboto-Italic.woff') format('woff'),
+         url('./styles/fonts/Roboto-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('./styles/fonts/Roboto-Regular.eot');
+    src: url('./styles/fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+         url('./styles/fonts/Roboto-Regular.svg#Roboto-Regular') format('svg'),
+         url('./styles/fonts/Roboto-Regular.ttf') format('truetype'),
+         url('./styles/fonts/Roboto-Regular.woff') format('woff'),
+         url('./styles/fonts/Roboto-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '18828';
+    src: url('./styles/fonts/18828.eot');
+    src: url('./styles/fonts/18828.eot?#iefix') format('embedded-opentype'),
+         url('./styles/fonts/18828.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+@font-face {
+    font-family: 'UmbrellaC-Plain';
+    src: url('./styles/fonts/UmbrellaC-Plain.svg#UmbrellaC-Plain') format('svg'),
+         url('./styles/fonts/UmbrellaC-Plain.ttf') format('truetype'),
+         url('./styles/fonts/UmbrellaC-Plain.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: none;
+    scroll-snap-type: mandatory;
+}
+
+header {
+    font-family: 'Oswald-Regular', serif;
+    position: sticky;
+    margin: 0;
+    border: none;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    color: black;
+    margin: none;
+    line-height: 50px;
+}
+
+.logo {
+        display: inline-block;
+        position: relative;
+        left: 8%;
+        top: 7%;
+}
+
+.title {
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    left: 10%;
+}
+
+img {
+
+    width: 25px;
+    height: 25px;
+}
+
+.introduce {
+    width: 100%;
+    height: 100vh;
+    background-color: #AFEEEE;
+    background-color: #003232;
+    color: white;    
+}
+
+
+.introduce-text {
+    padding-top: 15vh;
+    padding-left: 15vw;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 40px;  
+    width: 50%;
+    line-height: 150%;
+}
+
+.color-theme {
+    width: 100%;
+    height: 100vh;
+    background-color: #A92A2A;
+    color: black;
+    transition: color 3s linear;
+}
+
+.color-word {
+    padding-left: 23vw;
+    padding-top: 25vh;
+    font-family: 'UmbrellaC-Plain', serif ;
+    font-size: 15vw;
+}
+
+
+
+.color {
+    width: 100%;
+    height: 100vh;
+    background-color: #B2CE79;
+}
+
+.color-text {
+    display: inline-block;
+    width: 25%;
+    height: auto;
+    background-color: gray;
+
+}
+
+.color-container {
+    display: inline-block;
+    width: 70%;
+    height: auto;
+    background-color: brown;
+
+}
+.color-box {
+    display: inline-block;
+    background-color: violet;
+}
+
+
+
+
+
+
+/*for devices which max width less than 992 px*/
+@media screen and (max-width: 992px){
+    .color-word{
+        padding-left: 23vw;
+        padding-top: 45vh;
+    }
 }
