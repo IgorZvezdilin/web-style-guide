@@ -206,62 +206,128 @@ img {
 .introduce {
     width: 100%;
     height: 100vh;
-    background-color: #AFEEEE;
-    background-color: #003232;
-    color: white;    
+    background-color: #AFEEEE;    
 }
 
-
 .introduce-text {
-    padding-top: 15vh;
-    padding-left: 15vw;
+    display: inline-block;
+    margin-top: 10%;
+    margin-left: 15vw;
     font-family: 'Roboto Flex', sans-serif;
     font-size: 40px;  
     width: 50%;
     line-height: 150%;
+    border-bottom: 3px solid white;
+
 }
 
-.color-theme {
+.color-theme, .fonts, .text-style, .btn {
     width: 100%;
     height: 100vh;
-    background-color: #A92A2A;
+    background-color: #FFDABC;
     color: black;
-    transition: color 3s linear;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    text-align: center;
 }
 
-.color-word {
-    padding-left: 23vw;
-    padding-top: 25vh;
+.color-word, .font-word, .text-style-word, .btn-word {
+    display: inline-block;
     font-family: 'UmbrellaC-Plain', serif ;
     font-size: 15vw;
+    line-height: 100vh;
 }
 
-
-
-.color {
+.color, .fonts-backgnd {
     width: 100%;
     height: 100vh;
-    background-color: #B2CE79;
+    background-color: #AFEEEE;
 }
 
 .color-text {
     display: inline-block;
     width: 25%;
-    height: auto;
-    background-color: gray;
+    background-color: #AFEEEE;
+    border: 3px solid white;
+    border-radius: 45px;
+    margin-top: 7%;
+    margin-left: 10%;
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 150%;
+    padding: 10% 5%;
 
 }
 
 .color-container {
-    display: inline-block;
-    width: 70%;
-    height: auto;
-    background-color: brown;
-
+    float: right;
+    margin-right: 6%;
+    margin-top: 15%;
+    height: 42vh;
+    width: 525px;
+    background-color: #AFEEEE;
 }
+
 .color-box {
     display: inline-block;
+    width: 250px;
+    height: 100px;
     background-color: violet;
+    border: 2px solid;
+    border-radius: 10px;
+    margin-top: 2px;
+    padding-left: 6px;
+    font-family: 'Lato', sans-serif;;
+    text-align: center;
+}
+
+.color-name {
+    display: block;
+    margin-top: 5%;
+}
+
+.color-num {
+    display: block;
+    width: 120px;
+    margin-left: 25%;
+    margin-top: 15%;
+    border-bottom: 2px solid white;
+
+}
+
+#LightSlateGray {
+    background-color: lightslategray;
+    border-color: lightslategray;
+}
+
+#Yellow {
+    background-color: yellow;
+    border-color: yellow;
+}
+
+#SlateBlue {
+    background-color: slateblue;
+    border-color: slateblue;
+}
+
+#DarkCyan {
+    background-color: DarkCyan;
+    border-color: darkcyan;
+}
+
+#LightCoral {
+    background-color: LightCoral;
+    border-color: LightCoral;
+}
+
+#PaleGreen {
+    background-color: PaleGreen;
+    border-color: PaleGreen;
+}
+
+.fonts {
+
 }
 
 
