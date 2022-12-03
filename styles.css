@@ -149,13 +149,24 @@
     font-style: normal;
 }
 
+/*end fonts*/
+
+/*--------------------------------------------------*/
+
+/*full display activated*/
+
 html,body {
-    width: 100%;
+    width: 100vw;
     margin: 0;
     padding: 0;
-    overflow-x: none;
-    scroll-snap-type: mandatory;
+    overflow-x: hidden;
 }
+
+body {
+    position: relative;
+}
+
+/*header part*/
 
 header {
     font-family: 'Oswald-Regular', serif;
@@ -191,22 +202,16 @@ img {
     height: 25px;
 }
 
+/* end header part*/
+
+/*--------------------------------------------------*/
+
+/*info and teaser pages styles*/
+
 .introduce, .color, .font-backgnd, .text-style-backnd, .btn-backgnd {
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     background-color: #AFEEEE;    
-}
-
-.introduce-text {
-    display: inline-block;
-    margin-top: 10%;
-    margin-left: 15vw;
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 40px;  
-    width: 50%;
-    line-height: 150%;
-    border-bottom: 3px solid white;
-
 }
 
 .color-theme, .fonts, .text-style, .btn {
@@ -225,8 +230,29 @@ img {
     font-size: 15vw;
     line-height: 100vh;
 }
+/*end info and teaser pages styles*/
 
+/*--------------------------------------------------*/
 
+/* introduce part */
+
+.introduce-text {
+    display: inline-block;
+    margin-top: 10%;
+    margin-left: 15vw;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 40px;  
+    width: 50%;
+    line-height: 150%;
+    border-bottom: 3px solid white;
+
+}
+
+/*end introduce part*/
+
+/*--------------------------------------------------*/
+
+/*color part*/
 
 .color-text {
     display: inline-block;
@@ -311,6 +337,9 @@ img {
     border-color: PaleGreen;
 }
 
+/*end color part*/
+
+/*--------------------------------------------------*/
 
 /*fonts part*/
 
@@ -441,7 +470,12 @@ img {
     font-style: italic;
 }
 
+/*end fonts part*/
+
+/*--------------------------------------------------*/
+
 /*text styles part*/
+
 .text-style-text {
     display: inline-block;
     border-right: 3px solid white;
@@ -523,6 +557,12 @@ ul {
     list-style-type: none;
 }
 
+/*end text styles part*/
+
+/*--------------------------------------------------*/
+
+/*button part*/
+
 .btn-text {
     display: inline-block;
     border-top: 3px solid white;
@@ -537,15 +577,226 @@ ul {
     line-height: 150%;
 }
 
+.btn-container {
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 75%;
+    height: 40vh;
+}
 
+.btn-style {
+    width: 90%;
+    height: 20vh;
+    margin-left: 3%;
+    margin-top: 2%;
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 26px;
+    border: 3px solid black;
+}
 
+.btn-smc {
+    box-shadow: 1vw 1vh black;
+    border-radius: 15px;
+}
 
+.btn-smc:hover {
+    background-color: #176721;
+    color: black;
+}
+.btn-smc-active,.btn-flat-active {
+    display:block;
+    width: 45%;
+    height: 30vh;
+    margin-left: 3%;
+    float: left;
+}
+.btn-smc:active {
+    background-color: #9E9E9E;
+    margin-left: 2vw;
+    margin-top: 2vh;
+    box-shadow: none;
+}
 
+.btn-flat {
+    display:block;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: white;
+    
+}
+
+.btn-flat:hover {
+    background-color: #176721;
+    border-color: #176721;
+}
+
+.btn-flat:active {
+    background-color: #9E9E9E;
+    border: 3px solid black;
+}
+
+/*end button part*/
+
+/*--------------------------------------------------*/
+
+/*footer part*/
+
+footer>div {
+    font-family: 'Oswald-Regular', sans-serif;
+    font-size: 20px;
+    line-height: 45px;
+    display: inline-block;
+    height: 45px;
+    margin-left: 8%;
+}
+
+.href-github {
+    color: #9932CC;
+    text-decoration: dashed;
+    margin-right: 10%;
+}
+.href-icon {
+    color: #9E9E9E;
+}
+
+/*end footer part*/
+
+/*--------------------------------------------------*/
+
+/*mobile website part*/
 
 /*for devices which max width less than 992 px*/
 @media screen and (max-width: 992px){
-    .color-word{
-        padding-left: 23vw;
-        padding-top: 45vh;
+
+    header, footer {
+        width: 100vw;
     }
+    .color-theme, .fonts, .text-style, .btn {
+        width: 100vw;
+        height: auto;
+    }
+
+    .color-word, .font-word, .text-style-word, .btn-word{
+        height: 100vh;
+
+    }
+    .introduce, .color, .font-backgnd, .text-style-backnd, .btn-backgnd {
+        width: 100vw;
+        height: auto;
+    }
+
+    
+    .color-text {
+        font-size: 30px;
+        margin-left: 8vw;
+        width: 70vw;
+    }
+    .color-container {
+        float: none;
+        width: 70vw;
+        height: auto;
+        margin-left: 12vw;
+    }
+
+    .color-box {
+        display:inline-block;
+        width: 65vw;
+        padding-bottom: 3vh;
+        margin-bottom: 2vh;
+        margin-left: 5vw;
+        text-align: center;
+
+    }
+    .color-num{
+        margin-top: 5vh;
+    }
+
+    .font-text {
+        margin-top: 4vh;
+        font-size: 30px;
+    }
+
+    .font-container {
+        margin-left: 8vw;
+        margin-top: 3vh;
+        width: 80vw;
+        font-size: 17px;
+        margin-bottom: 3vh;
+        
+    }
+    .font-box{
+        display: block;
+        border-right: none;
+        width: 75vw;
+        height: 25vh;
+        margin-bottom: 7vh;
+    }
+    .roboto-flex-font,.oswald-font,.umbrellac-plain-font {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .umbrellac-plain-font {
+        padding-bottom: 3vh;
+    }
+
+    .text-style-text{
+        font-size: 30px;
+        margin-top: 3vh;
+    }
+    .text-style-container{
+        display: block;
+        width: 75vw;
+        height: auto;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        margin-left: 7vw;
+        display: inline-block;
+
+    }
+    
+    .text-style-box{
+
+        margin-left: 2vw;
+        width: 70vw;
+    }
+
+    .btn-text {
+        font-size: 30px;
+        margin-top: 5vh;
+    }
+    .btn-container {
+        height: auto;
+        margin-left: 7vw;
+        width: 80vw;
+        margin-bottom: 3vh;
+    }
+
+    .btn-smc, .btn-flat {
+        margin-bottom: 1vh;
+        width: 75vw;
+
+    }
+
+    .btn-smc:hover {
+        background-color: none;
+    }
+
+    .btn-style {
+        margin-left: 0;
+        margin-top: 2vh;
+    }
+
+
+    .btn-flat-active, .btn-smc-active {
+        height: 25vh;
+        margin-bottom: 0;
+        float: none;
+    }
+
+    footer>div{
+        font-size: 20px;
+        margin-left: 3vw;
+    }
+
 }
